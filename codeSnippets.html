@@ -1,0 +1,58 @@
+/* code snippets for Input control */ /* textarea element */
+<textarea rows="3" cols="30">
+    We live in a mobile-first and cloud-first world. Computing is ubiquitous, and experiences span devices and exhibit ambient intelligence.
+    </textarea> /* select element */
+<select>
+        <option value="DAT202x">Processing Big Data with Azure HDInsight</option>
+        <option value="DAT204x">Introduction to R Programming</option>
+        <option value="CLD203x">Office 365: Managing Identities and Services</option>
+        <option value="DEV208x">Introduction to jQuery</option>
+    </select>
+
+<select>
+        <optgroup label="Data Platform">
+            <option value="DAT202x">Processing Big Data with Azure HDInsight</option>
+            <option value="DAT204x">Introduction to R Programming</option>
+        </optgroup>
+        <optgroup label="Cloud">
+            <option value="CLD203x">Office 365: Managing Identities and Services</option>
+        </optgroup>
+        <optgroup label="Development">
+            <option value="DEV208x">Introduction to jQuery</option>
+        </optgroup>
+    </select> /* Form element Example */
+<!Doctype <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HTML PAGE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>
+                Text Data
+            </legend>
+            First Name: <br />
+            <input type="text" name="firstName" value="" placeholder="Enter your First Name here" /><br /> Last Name: <br />
+            <input type="text" name="lastName" value="" placeholder="Enter your Last Name here" /><br />
+        </fieldset>
+        <fieldset>
+            <legend>
+                Numeric Data
+            </legend>
+            Age: <br />
+            <input type="range" name="age" min="0" max="100" value="25" /><br />
+            <br />
+        </fieldset>
+        <input type="submit" value="Click Me to Submit" /><br />
+    </form>
+</body>
+
+</html>
