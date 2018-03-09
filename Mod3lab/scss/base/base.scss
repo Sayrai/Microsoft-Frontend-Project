@@ -1,0 +1,23 @@
+//@import "../../../variables.scss";
+
+/*Reset Styles*/
+
+
+/*Base Styles*/
+
+body {
+    color: #414042;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    // color: $text-color;
+}
+
+a {
+    color: #8dc63f;
+    font-weight: bold;
+    // color: $link-color;
+}
+
+a:hover {
+    text-decoration: underline;
+}

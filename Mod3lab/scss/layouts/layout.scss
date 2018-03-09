@@ -1,0 +1,42 @@
+/*Layout Styles*/
+
+$gutter: 30px;
+$gutter-margin: ($gutter / 2);
+
+/*It pads the left and right 15px to make sure our content does not run directly 
+to the edge and to set up the base for our 30px grid gutter.
+
+It sets the margins to auto center the container on the screen.
+
+It sets max-width:1170px, because when you add the left and right padding with 
+the max-width, you get 1200px which is our large device breakpoint.*/
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1170px;
+}
+
+.row {
+    /* margin-right: -15px;
+    margin-left: -15px; */
+    margin-right: (-$gutter-margin);
+    margin-left: ($gutter-margin);
+}
+
+
+/* :after pseudo-class to clear any floated elements inside the .row */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+[class*='col-'] {
+    width: 100%;
+    padding-left: ($gutter-margin);
+    padding-right: ($gutter-margin);
+}
